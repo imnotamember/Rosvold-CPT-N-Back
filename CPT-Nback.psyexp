@@ -1,0 +1,561 @@
+<PsychoPy2experiment version="1.81.03" encoding="utf-8">
+  <Settings>
+    <Param name="Show mouse" val="False" valType="bool" updates="None"/>
+    <Param name="Data filename" val="'data/%s_%s_%s' %(expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None"/>
+    <Param name="Monitor" val="testMonitor" valType="str" updates="None"/>
+    <Param name="Enable Escape" val="True" valType="bool" updates="None"/>
+    <Param name="color" val="$[-1.000,-1.000,-1.000]" valType="str" updates="None"/>
+    <Param name="Window size (pixels)" val="[1920, 1080]" valType="code" updates="None"/>
+    <Param name="Full-screen window" val="True" valType="bool" updates="None"/>
+    <Param name="colorSpace" val="rgb" valType="str" updates="None"/>
+    <Param name="Experiment info" val="{u'Gender': u'female', u'Handedness': u'Right', u'participant': u'100'}" valType="code" updates="None"/>
+    <Param name="Save csv file" val="True" valType="bool" updates="None"/>
+    <Param name="Show info dlg" val="True" valType="bool" updates="None"/>
+    <Param name="Save wide csv file" val="True" valType="bool" updates="None"/>
+    <Param name="Save psydat file" val="True" valType="bool" updates="None"/>
+    <Param name="expName" val="Rosvold CPT" valType="str" updates="None"/>
+    <Param name="logging level" val="debug" valType="code" updates="None"/>
+    <Param name="blendMode" val="avg" valType="str" updates="None"/>
+    <Param name="Save excel file" val="True" valType="bool" updates="None"/>
+    <Param name="Units" val="use prefs" valType="str" updates="None"/>
+    <Param name="Save log file" val="True" valType="bool" updates="None"/>
+    <Param name="Screen" val="1" valType="num" updates="None"/>
+  </Settings>
+  <Routines>
+    <Routine name="Welcome_Nback">
+      <ImageComponent name="Nback_Instructions">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="flipVert" val="False" valType="bool" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="flipHoriz" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Nback_Instructions" valType="code" updates="None"/>
+        <Param name="color" val="$[1,1,1]" valType="str" updates="constant"/>
+        <Param name="stopVal" val="$instrStopTime2" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="30" valType="code" updates="None"/>
+        <Param name="mask" val="None" valType="str" updates="constant"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="interpolate" val="linear" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="texture resolution" val="128" valType="code" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="image" val="N-back Instructions.jpg" valType="str" updates="constant"/>
+        <Param name="size" val="[1.125, 1.5]" valType="code" updates="constant"/>
+      </ImageComponent>
+      <KeyboardComponent name="Trigger_Nback_Instructions">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Trigger_Nback_Instructions" valType="code" updates="None"/>
+        <Param name="stopVal" val="$instrStopTime2" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="30" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="False" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Welcome_CPT_AX">
+      <TextComponent name="Instructions_CPT_AX">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Instructions_CPT_AX" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="This time press button 1 as quickly as you can when you see the letter X if it comes after letter A. Do not hit the button on letter A, only on letter X when it comes AFTER letter A.&#10;&#10;This screen will be up for 20 seconds." valType="str" updates="constant"/>
+        <Param name="stopVal" val="$instrStopTime-120" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="20" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Trigger_CPT_AX_Instructions">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Trigger_CPT_AX_Instructions" valType="code" updates="None"/>
+        <Param name="stopVal" val="$instrStopTime" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="22" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="False" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Nback_Stimulus">
+      <TextComponent name="Letter_Nback">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Letter_Nback" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="$letters" valType="str" updates="set every repeat"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val=".5" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Response_Nback">
+        <Param name="correctAns" val="$correctButton" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="True" valType="bool" updates="constant"/>
+        <Param name="name" val="Response_Nback" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'1'" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <KeyboardComponent name="Trigger_Nback_Stimulus">
+        <Param name="correctAns" val="'num_multiply'" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Trigger_Nback_Stimulus" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="False" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <CodeComponent name="Nback_Code">
+        <Param name="Begin Experiment" val="Nback_responseList = []&#10;Nback_correctList = []&#10;Nback_accuracy = []&#10;Nback_responseTimeList = []" valType="extendedCode" updates="constant"/>
+        <Param name="name" val="Nback_Code" valType="code" updates="None"/>
+        <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
+        <Param name="End Routine" val="Nback_responseList.append(Response_Nback.keys)&#10;print 'Response_Nback.keys = %s' % Response_Nback.keys&#10;print 'Nback_responseList = %s' % Nback_responseList&#10;Nback_correctList.append(Response_Nback.corr)&#10;if len(Nback_accuracy) &gt; 0:&#10;    Nback_accuracy.append(sum(Nback_correctList)/len(Nback_correctList))&#10;else:&#10;    Nback_accuracy.append(Response_Nback.corr)&#10;if Response_Nback.keys != None:  # we had a response&#10;    Nback_responseTimeList.append(Response_Nback.rt)&#10;else:&#10;    Nback_responseTimeList.append(0)" valType="extendedCode" updates="constant"/>
+        <Param name="End Experiment" val="Nback_responseListTotal = len([elem for elem in Nback_responseList if elem == '1'])&#10;Nback_correctList_Total = sum(Nback_correctList)&#10;Nback_responseTimeList_Average = (sum(Nback_responseTimeList)/len(elem for elem in Nback_responseTimeList if elem != 0))&#10;csvDictionary = {'Nback_letters': oldLets, 'correctButton':correctButtonList, 'Response':Nback_responseList, 'Correct':Nback_correctList, 'Accuracy':Nback_accuracy, 'Response_Time':Nback_responseTimeList}&#10;finalLine = {'CPT_AX_letters': 'Total:', 'correctButton':'-'*5, 'Response':Nback_responseListTotal, 'Correct':Nback_correctList_Total, 'Accuracy':'Average:', 'Response_Time':Nback_responseTimeList_Average}&#10;writeDataFile(csvDictionary, '%s_Nback_results' % expInfo['participant'], ['Nback_letters', 'correctButton', 'Response', 'Correct', 'Accuracy', 'Response_Time'], finalLine)" valType="extendedCode" updates="constant"/>
+        <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="CPT_AX">
+      <TextComponent name="Letter_CPT_AX">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Letter_CPT_AX" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="$CPT_letters" valType="str" updates="set every repeat"/>
+        <Param name="stopVal" val="6" valType="code" updates="constant"/>
+        <Param name="durationEstim" val=".1" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val=".5" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Response_CPT_AX_X">
+        <Param name="correctAns" val="$correctButton" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="True" valType="bool" updates="constant"/>
+        <Param name="name" val="Response_CPT_AX_X" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'1'" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <KeyboardComponent name="Response_CPT_AX_A">
+        <Param name="correctAns" val="$corAns" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Response_CPT_AX_A" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'1'" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <KeyboardComponent name="Trigger_CPT_AX_Stimuls">
+        <Param name="correctAns" val="'num_multiply'" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Trigger_CPT_AX_Stimuls" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="False" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <CodeComponent name="CPT_AX_Code">
+        <Param name="Begin Experiment" val="CPT_AX_responseList = []&#10;CPT_AX_responseToAList = []&#10;CPT_AX_correctList = []&#10;CPT_AX_accuracy = []&#10;CPT_AX_responseTimeList = []" valType="extendedCode" updates="constant"/>
+        <Param name="name" val="CPT_AX_Code" valType="code" updates="None"/>
+        <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
+        <Param name="End Routine" val="CPT_AX_responseList.append(Response_CPT_AX_X.keys)&#10;CPT_AX_correctList.append(Response_CPT_AX_X.corr)&#10;if (Response_CPT_AX_X.corr == 0) and (CPT_letters == 'A'):&#10;    CPT_AX_responseToAList.append(1)&#10;else:&#10;    CPT_AX_responseToAList.append(0)&#10;if len(CPT_AX_accuracy) &gt; 0:&#10;    CPT_AX_accuracy.append(sum(CPT_AX_correctList)/len(CPT_AX_correctList))&#10;else:&#10;    CPT_AX_accuracy.append(Response_CPT_AX_X.corr)&#10;if Response_CPT_AX_X.keys != None:  # we had a response&#10;    CPT_AX_responseTimeList.append(Response_CPT_AX_X.rt)&#10;else:&#10;    CPT_AX_responseTimeList.append(0)" valType="extendedCode" updates="constant"/>
+        <Param name="End Experiment" val="CPT_AX_responseListTotal = len([elem for elem in CPT_AX_responseList if elem == '1'])&#10;CPT_AX_correctList_Total = sum(CPT_AX_correctList)&#10;CPT_AX_responseToAList_Total = sum(CPT_AX_responseToAList)&#10;CPT_AX_responseTimeList_Average = (sum(CPT_AX_responseTimeList)/len([elem for elem in CPT_AX_responseTimeList if elem &gt; 0]))&#10;csvDictionary = {'CPT_AX_letters': list2[1:10], 'correctButton':buttonList2[1:10], 'Response':CPT_AX_responseList, 'Response_To_A':CPT_AX_responseToAList, 'Correct':CPT_AX_correctList, 'Accuracy':CPT_AX_accuracy, 'Response_Time':CPT_AX_responseTimeList}&#10;finalLine = {'CPT_AX_letters': 'Total:', 'correctButton':'-'*5, 'Response':CPT_AX_responseListTotal, 'Response_To_A': CPT_AX_responseToAList_Total,'Correct':CPT_X_correctList_Total, 'Accuracy':'Average:', 'Response_Time':CPT_X_responseTimeList_Average}&#10;writeDataFile(csvDictionary, '%s_CPT_AX_results' % expInfo['participant'], ['CPT_AX_letters', 'correctButton', 'Response', 'Response_To_A', 'Correct', 'Accuracy', 'Response_Time'], finalLine)&#10;" valType="extendedCode" updates="constant"/>
+        <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="AreYouSure">
+      <TextComponent name="Warning">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Warning" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="After this point we won't stop the experiment, unless there is a problem.&#10;&#10;Are you sure you are ready? If so, press space bar." valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Next_Slide_Warning">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Next_Slide_Warning" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'space'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="nothing" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Start">
+      <TextComponent name="Welcome">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Welcome" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="Welcome to the Biomarker Imaging Study&#10;&#10;Press any button when ready to continue" valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Next_Slide">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Next_Slide" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="nothing" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <CodeComponent name="Initilization_Code">
+        <Param name="Begin Experiment" val="'''&#10;Total time to record MRI sequence:&#10;    Seconds: 2196.44&#10;    Minutes: 36.60733~&#10;'''&#10;###################SETTINGS######################&#10;###################SETTINGS######################&#10;###################SETTINGS######################&#10;###################SETTINGS######################&#10;#should be 1320 (1320 frames = 22 seconds @ 60Hz refresh rate)&#10;instrStopTime = 12&#10;#should be 1800 (1800 frames = 30 seconds @ 60Hz refresh rate)&#10;instrStopTime2 = 18&#10;#set this to whatever button is recorded on a trigger pulse,&#10;# wrapped in apostrophes and seperated by commas for multiple&#10;# buttons( e.g.: '6','^')&#10;triggerButton = 'num_multiply', '8', '*'&#10;###################SETTINGS######################&#10;###################SETTINGS######################&#10;###################SETTINGS######################&#10;###################SETTINGS######################&#10;#&#10;#################################################&#10;####################CSV Code#####################&#10;def writeDataFile(csvDict, csvFileName, fieldNames, finalLine = {}):&#10;    print csvDict, fieldNames&#10;    with open('%s.csv' % csvFileName, 'wb') as outfile:&#10;        writer = csv.DictWriter(outfile, fieldnames = fieldNames)&#10;        writer.writeheader()&#10;        print 'header written'&#10;        rowList = []&#10;        for i in range(len(csvDict[fieldNames[0]])):&#10;            rowDict = {}&#10;            for key in csvDict.keys():&#10;                try:&#10;                    rowDict[key] = csvDict[key][i]&#10;                except:&#10;                    pass&#10;            rowList.append(rowDict)&#10;        if finalLine != {}:&#10;            rowList.append(finalLine)&#10;        writer.writerows(rowList)&#10;####################CSV Code#####################&#10;#################################################&#10;#&#10;#################################################&#10;#################N-Back Code#####################&#10;import csv&#10;########&#10;iRanWhat= 0&#10;continueRunning = True&#10;while continueRunning:&#10;    corAns = 'none'&#10;    nBackLetter = 'A'&#10;    currentLetter = 'A'&#10;    oldLets = []&#10;    correctButtonList = []&#10;    nBackLets = []&#10;    position=0&#10;    correctAns= 0&#10;    nBack = 2&#10;    #array of letters to sample from&#10;    nBackLets = map(chr, range(65, 91))&#10;    counter = 0&#10;    howManyTimes = 10&#10;    while(position&lt;howManyTimes):&#10;       #pick random number from 1-100 for determining if this is an nBack round or not&#10;       bias = randint(1, 100)&#10;       currentLetter = nBackLets[randint(0,25)]&#10;       #check that enough rounds have passed to display an nBack&#10;       if position-nBack &gt;= 0:&#10;          #determine if next letter will be new or a nBack match, currently 50/50 odds&#10;          if bias &lt; 50:&#10;             currentLetter = oldLets[position-nBack]&#10;             corAns = '1'&#10;             counter += 1&#10;          else:&#10;             corAns = 'none'&#10;       # update component parameters for each repeat&#10;       correctButtonList.append(corAns)&#10;       oldLets.append(currentLetter)&#10;       position = position + 1&#10;    iRanWhat += 1&#10;    if counter == (howManyTimes/2):&#10;        print &quot;nbacks = %d&quot; % counter&#10;        continueRunning = False&#10;        #load dictionary to write to csvDictionary&#10;        print oldLets&#10;        print correctButtonList&#10;        csvDictionary = {'letters': oldLets, 'correctButton':correctButtonList}&#10;        print csvDictionary&#10;&#10;writeDataFile(csvDictionary, 'NbackStimOrder', ['letters', 'correctButton'])&#10;&#10;print &quot;It took %d runs to get this perfect set.&quot; % iRanWhat&#10;##################N-Back Code####################&#10;#################################################&#10;#&#10;#################################################&#10;####################CPT Code#####################&#10;##RANDOMIZATION OF STIMULI#####&#10;###Randomization of X trials###&#10;list1 = []&#10;list2 = []&#10;buttonList1 = []&#10;buttonList2 = []&#10;currentLetter = &quot;X&quot;&#10;#array of letters to sample from&#10;lets = map(chr, range(65, 91))&#10;del lets[23]####Delete X from the list&#10;xPoolOfLetters = [&quot;X&quot; for i in range(100)]&#10;xPoolOfLetters = xPoolOfLetters + (8 * lets)&#10;for i in range(12):&#10;    xPoolOfLetters.append(lets[randint(0,24)])&#10;print len(xPoolOfLetters)&#10;######Randomization of A-X trials&#10;aCurrentLetter = &quot;A&quot;&#10;print 'length of lets:', len(lets)&#10;aLets = lets&#10;print 'length of alets:', len(aLets)&#10;del aLets[0]&#10;############for ax, I'll just load the list with A's,&#10;############and after sorting insert X after each A in the list&#10;axPoolOfA = [&quot;A&quot; for i in range(100)]&#10;axPoolOfLetters = []&#10;axPoolOfLetters = axPoolOfLetters + (4 * aLets)&#10;for i in range(16):&#10;    axPoolOfLetters.append(aLets[randint(0,23)])&#10;shuffle(axPoolOfLetters)&#10;print len(axPoolOfLetters)&#10;&#10;def xRandomizer(pol):&#10;    repeatAttempt = False&#10;    for x in range(0,len(pol)):&#10;        if x &gt; 2:&#10;            if pol[x] == pol[x-1]:&#10;                if pol[x] == pol[x-2]:&#10;                    if pol[x] == pol[x-3]:&#10;                        shuffle(pol)&#10;                        repeatAttempt = True&#10;                        break&#10;    if repeatAttempt == True:&#10;        xRandomizer(pol)&#10;    perfectPool = list(pol)&#10;    print len(perfectPool)&#10;    return perfectPool&#10;&#10;def axRandomizer(apoa, apol):&#10;    repeatAttempt = False&#10;    newApol = []&#10;    otherLetters = 0&#10;    aLetters = 0&#10;    totalLength = len(apol)+len(apoa)&#10;    backup1 = list(apoa)&#10;    backup2 = list(apol)&#10;    for x in range(0,totalLength):&#10;        seed = randint(0,2)&#10;        if seed == 0 and apol != []:&#10;            aLetters = 0&#10;            otherLetters += 1&#10;            if x % 2 == 0:&#10;                oLL = 2&#10;            else:&#10;                oLL = 3&#10;            if otherLetters &gt; oLL:&#10;                otherLetters = 0&#10;                if apoa == []:&#10;                    newApol.append(apol.pop())&#10;                else:&#10;                    newApol.append(apoa.pop())&#10;                    aLetters += 1&#10;            else:&#10;                newApol.append(apol.pop())&#10;        elif seed == 1 and apoa != []:&#10;            aLetters += 1&#10;            otherLetters = 0&#10;            if aLetters &gt; 2:&#10;                aLetters = 0&#10;                if apol == []:&#10;                    newApol.append(apoa.pop())&#10;                else:&#10;                    newApol.append(apol.pop())&#10;                    otherLetters += 1&#10;            else:&#10;                newApol.append(apoa.pop())&#10;        else:&#10;            if apol == []:&#10;                if totalLength - len(newApol) &gt; 5:&#10;                    repeatAttempt = True&#10;                    break&#10;                else:&#10;                    newApol.append(apoa.pop())&#10;            elif apoa == []:&#10;                newApol.append(apol.pop())&#10;    if repeatAttempt == True:&#10;        axRandomizer(backup1, backup2)&#10;    else:&#10;        for x in range(0, len(newApol)+100):&#10;            if newApol[x] == 'A':&#10;                newApol.insert(x+1,'X')&#10;    perfectPool = list(newApol)&#10;    print len(perfectPool)&#10;    return perfectPool&#10;&#10;list1 = xRandomizer(xPoolOfLetters)&#10;a = list(axPoolOfA)&#10;l = list(axPoolOfLetters)&#10;list2 = axRandomizer(a, l)&#10;#print &quot;list1 = &quot;, list1&#10;#print &quot;list2 = &quot;, list2&#10;def createButtonLists(alist):&#10;    abuttonlist = []&#10;    for i in alist:&#10;        if i is 'X':&#10;            abuttonlist.append('1')&#10;        else:&#10;            abuttonlist.append('none')&#10;    return abuttonlist&#10;buttonList1 = createButtonLists(list1)&#10;buttonList2 = createButtonLists(list2)&#10;#print buttonList1&#10;#print buttonList2&#10;csvDictionary = {'CPT_letters': list1[1:10], 'correctButton':buttonList1[1:10]}&#10;writeDataFile(csvDictionary, 'CPTstimOrder1', ['CPT_letters', 'correctButton'])&#10;csvDictionary = {'CPT_letters': list2[1:10], 'correctButton':buttonList2[1:10]}&#10;writeDataFile(csvDictionary, 'CPTstimOrder2', ['CPT_letters', 'correctButton'])&#10;####################CPT Code#####################&#10;#################################################" valType="extendedCode" updates="constant"/>
+        <Param name="name" val="Initilization_Code" valType="code" updates="None"/>
+        <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
+        <Param name="End Routine" val="" valType="extendedCode" updates="constant"/>
+        <Param name="End Experiment" val="" valType="extendedCode" updates="constant"/>
+        <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="Welcome_CPT_X">
+      <TextComponent name="Instructions_CPT_X">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Instructions_CPT_X" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="In this task, letters will be presented rapidly on the screen one at a time. Anytime you see the letter X, press button 1 as quickly as you can. Only press when you see letter X.&#10;&#10;This screen will be up for 20 seconds." valType="str" updates="constant"/>
+        <Param name="stopVal" val="$instrStopTime-120" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="20" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Trigger_CPT_X_Instructions">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Trigger_CPT_X_Instructions" valType="code" updates="None"/>
+        <Param name="stopVal" val="$instrStopTime" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="22" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="False" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Nback_Fixation">
+      <TextComponent name="Fixation_Nback">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Fixation_Nback" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="+" valType="str" updates="constant"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Trigger_Nback_Fixation">
+        <Param name="correctAns" val="'num_multiply','8'" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Trigger_Nback_Fixation" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="False" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="MRI_sync">
+      <TextComponent name="Waiting_For_Pulse">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Waiting_For_Pulse" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="Waiting for trigger pulse..." valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Pulse_Next_Slide">
+        <Param name="correctAns" val="'num_multiply'" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Pulse_Next_Slide" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="End">
+      <TextComponent name="GoodBye">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="GoodBye" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="Thank you, the study is complete. Please wait patiently for the technician to assist you out of the MRI." valType="str" updates="constant"/>
+        <Param name="stopVal" val="$instrStopTime" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="20" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="CPT_X">
+      <TextComponent name="Letter_CPT_X">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Letter_CPT_X" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="$CPT_letters" valType="str" updates="set every repeat"/>
+        <Param name="stopVal" val="6" valType="code" updates="constant"/>
+        <Param name="durationEstim" val=".1" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.5" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="Response_CPT_X_X">
+        <Param name="correctAns" val="$correctButton" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="True" valType="bool" updates="constant"/>
+        <Param name="name" val="Response_CPT_X_X" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'1'" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <KeyboardComponent name="Trigger_CPT_X_Stimulus">
+        <Param name="correctAns" val="'num_multiply'" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="Trigger_CPT_X_Stimulus" valType="code" updates="None"/>
+        <Param name="stopVal" val="60" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="1" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0" valType="code" updates="None"/>
+        <Param name="discard previous" val="False" valType="bool" updates="constant"/>
+        <Param name="startType" val="frame N" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="triggerButton" valType="code" updates="set every repeat"/>
+        <Param name="stopType" val="frame N" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <CodeComponent name="CPT_X_Code">
+        <Param name="Begin Experiment" val="CPT_X_responseList = []&#10;CPT_X_correctList = []&#10;CPT_X_accuracy = []&#10;CPT_X_responseTimeList = []" valType="extendedCode" updates="constant"/>
+        <Param name="name" val="CPT_X_Code" valType="code" updates="None"/>
+        <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
+        <Param name="End Routine" val="print 'Response_CPT_X_X.keys = %s' % Response_CPT_X_X.keys&#10;CPT_X_responseList.append(Response_CPT_X_X.keys)&#10;print 'CPT_X_responseList = %s' % CPT_X_responseList&#10;CPT_X_correctList.append(Response_CPT_X_X.corr)&#10;if len(CPT_X_accuracy) &gt; 0:&#10;    CPT_X_accuracy.append(sum(CPT_X_correctList)/len(CPT_X_correctList))&#10;else:&#10;    CPT_X_accuracy.append(Response_CPT_X_X.corr)&#10;if Response_CPT_X_X.keys != None:  # we had a response&#10;    CPT_X_responseTimeList.append(Response_CPT_X_X.rt)&#10;else:&#10;    CPT_X_responseTimeList.append(0)" valType="extendedCode" updates="constant"/>
+        <Param name="End Experiment" val="CPT_X_responseListTotal = len([elem for elem in CPT_X_responseList if elem == '1'])&#10;CPT_X_correctList_Total = sum(CPT_X_correctList)&#10;CPT_X_responseTimeList_Average = (sum(CPT_X_responseTimeList)/len([elem for elem in CPT_X_responseTimeList if elem != 0]))&#10;csvDictionary = {'CPT_X_letters': list1[1:10], 'correctButton':buttonList1[1:10], 'Response':CPT_X_responseList, 'Correct':CPT_X_correctList, 'Accuracy':CPT_X_accuracy, 'Response_Time':CPT_X_responseTimeList}&#10;finalLine = {'CPT_X_letters': 'Total:', 'correctButton':'-'*5, 'Response':CPT_X_responseListTotal, 'Correct':CPT_X_correctList_Total, 'Accuracy':'Average:', 'Response_Time':CPT_X_responseTimeList_Average}&#10;writeDataFile(csvDictionary, '%s_CPT_X_results' % expInfo['participant'], ['CPT_X_letters', 'correctButton', 'Response', 'Correct', 'Accuracy', 'Response_Time'], finalLine)" valType="extendedCode" updates="constant"/>
+        <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Start"/>
+    <Routine name="AreYouSure"/>
+    <Routine name="MRI_sync"/>
+    <Routine name="Welcome_CPT_X"/>
+    <LoopInitiator loopType="TrialHandler" name="CPT_X_Trials">
+      <Param name="conditionsFile" val="CPTstimOrder1.csv" valType="str" updates="None"/>
+      <Param name="name" val="CPT_X_Trials" valType="code" updates="None"/>
+      <Param name="isTrials" val="True" valType="bool" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="sequential" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'CPT_letters': 'N', 'correctButton': 'none'}, {'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'S', 'correctButton': 'none'}, {'CPT_letters': 'H', 'correctButton': 'none'}, {'CPT_letters': 'F', 'correctButton': 'none'}, {'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'H', 'correctButton': 'none'}]" valType="str" updates="None"/>
+      <Param name="Selected rows" val="" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="CPT_X"/>
+    <LoopTerminator name="CPT_X_Trials"/>
+    <Routine name="Welcome_CPT_AX"/>
+    <LoopInitiator loopType="TrialHandler" name="CPT_AX_Trials">
+      <Param name="conditionsFile" val="CPTstimOrder2.csv" valType="str" updates="None"/>
+      <Param name="name" val="CPT_AX_Trials" valType="code" updates="None"/>
+      <Param name="isTrials" val="True" valType="bool" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="sequential" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'A', 'correctButton': 'none'}, {'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'M', 'correctButton': 'none'}, {'CPT_letters': 'A', 'correctButton': 'none'}, {'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'A', 'correctButton': 'none'}, {'CPT_letters': 'X', 'correctButton': '1'}, {'CPT_letters': 'M', 'correctButton': 'none'}]" valType="str" updates="None"/>
+      <Param name="Selected rows" val="" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="CPT_AX"/>
+    <LoopTerminator name="CPT_AX_Trials"/>
+    <Routine name="Welcome_Nback"/>
+    <LoopInitiator loopType="TrialHandler" name="Nback_Trials">
+      <Param name="conditionsFile" val="NbackStimOrder.csv" valType="str" updates="None"/>
+      <Param name="name" val="Nback_Trials" valType="code" updates="None"/>
+      <Param name="isTrials" val="True" valType="bool" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="sequential" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'letters': 'L', 'correctButton': 'none'}, {'letters': 'R', 'correctButton': 'none'}, {'letters': 'G', 'correctButton': 'none'}, {'letters': 'R', 'correctButton': '1'}, {'letters': 'C', 'correctButton': 'none'}, {'letters': 'R', 'correctButton': '1'}, {'letters': 'C', 'correctButton': '1'}, {'letters': 'R', 'correctButton': '1'}, {'letters': 'W', 'correctButton': 'none'}, {'letters': 'R', 'correctButton': '1'}]" valType="str" updates="None"/>
+      <Param name="Selected rows" val="" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="Nback_Fixation"/>
+    <Routine name="Nback_Stimulus"/>
+    <LoopTerminator name="Nback_Trials"/>
+    <Routine name="End"/>
+  </Flow>
+</PsychoPy2experiment>
